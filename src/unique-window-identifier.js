@@ -94,7 +94,7 @@ export default class UniqueWindowIdentifier {
    * Picks the identifier from the parent object on the window's name property and
    * returns it.
    *
-   * @returns {String} The unique identifier
+   * @returns {String|undefined} The unique identifier
    */
   get() {
     // return the identifier or undefined

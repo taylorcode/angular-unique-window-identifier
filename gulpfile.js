@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     bundlerJs = require('bundler-js'),
-    packageFilename = 'unique-window-identifier'
+    packageFilename = 'unique-window-identifier';
  
 gulp.task('test', function () {
     return gulp.src('spec/test.js')
@@ -13,8 +13,8 @@ gulp.task('test', function () {
 
 gulp.task('bundle', function () {
     bundlerJs({
-        appScript: './src/' + packageFilename,
-        outputFile: packageFilename,
+        appScript: './src/module.js',
+        outputFile: packageFilename + '.js',
         dest: 'dist'
     });
 });
