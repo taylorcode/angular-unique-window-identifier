@@ -1,8 +1,5 @@
 var gulp = require('gulp'),
     jasmine = require('gulp-jasmine'),
-    babel = require('gulp-babel'),
-    sourcemaps = require('gulp-sourcemaps'),
-    concat = require('gulp-concat'),
     bundlerJs = require('bundler-js'),
     packageFilename = 'unique-window-identifier';
  
